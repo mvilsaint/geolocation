@@ -19,6 +19,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+	
+	cordova.getAppVersion.getVersionNumber().then(function (version) {
+		alert(version);
+	});
   });
 })
 
